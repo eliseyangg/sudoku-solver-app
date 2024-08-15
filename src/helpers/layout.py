@@ -17,7 +17,9 @@ def get_column_defs():
 
 def get_random_template():
      
-    src_filename = 'src/assets/sudokus_start.txt'
+    # src_filename = 'src/helpers/sudokus_start.txt'
+    src_filename = '/opt/render/project/src/src/assets/sudokus_start.txt' # deployment
+    
     try:
         srcfile = open(src_filename, "r")
         sudoku_file = srcfile.read()
@@ -26,7 +28,7 @@ def get_random_template():
         exit()
 
     sudoku_list = sudoku_file.split("\n")
-    random_string = sudoku_list[random.randint(0, len(sudoku_list)-1)]    
+    random_string = sudoku_list[random.randint(0, len(sudoku_list)-1)]
     return random_string
 
 def get_random_row_data():
