@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300; 
+}
+
+p, span, div, a, li, input, button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+[class*="secondary"]{
+    color: #51463b;
+    background-color: #e9e2de;
+    border-color: #e9e2de;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+[class*="secondary"]:hover {
+    color: #e9e2de;
+    background-color: #51463b!important;
+    border-color: #51463b;
+}
+
+[class*="primary"]{
+    color: #e9e2de;
+    background-color: #51463b;
+    border-color: #51463b;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+[class*="primary"]:hover {
+    color: #51463b;
+    background-color: #e9e2de!important;
+    border-color: #e9e2de;
+}
+
+.ag-theme-balham input[class^=ag-] {
+    color: #928883!important;
+}
